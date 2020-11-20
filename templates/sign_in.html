@@ -1,20 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="eng">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bekary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Bakery</title>
 </head>
-<body>
-    <div>   
-        <div>   <!--Go home-->
-            <nav>
+    <body class="b">
+        <div class="reg-page">
+            <div class="main">
+                <h2 class="text">Sign in to Bread Bekary</h2>
+                <div class="mail">
+                    <input class="input-mail" placeholder="e-mail">
+                </div>
                 
-            </nav>
+                <div class="password">
+                    <input class="input-password" placeholder="password">
+                </div>
 
+                <div class="sign-in">
+                    <button class="button-sign-in" onclick="myFunction()">Sign in</button>
+                </div>
+
+            </div>
+            
         </div>
 
-    </div>
+    </body>
 
-</body>
 </html>

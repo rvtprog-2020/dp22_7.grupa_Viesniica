@@ -10,4 +10,8 @@ def mainpage1():
 def mainpage2():
     return render_template('mainpage2.html')
 
+@app.route('/sign_in.html')
+def sign_in():
+    return render_template('sign_in.html')
+
 app.run(host='0.0.0.0', port=80, debug=True)
