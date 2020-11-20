@@ -1,0 +1,31 @@
+.navb{
+    background-color: white;
+}
+.title{
+    text-align: center;
+}
+.subtitle{
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 20px;
+}
+.hbar {
+    width: auto; 
+    background-color: rgb(135, 135, 135); 
+    height: 620px; 
+    margin-right: 10%; 
+    margin-left: 10%; 
+    margin-bottom: 80px; 
+    margin-top: 80px;
+}
+.hotels {
+    height: auto;
+    width: 360px;
+    background-color: azure;
+    margin-left: 5%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+
+
+}

@@ -1,1 +1,4 @@
-# dp22_7.grupa_Viesniica
+# Projekts "Viesnīca"
+
+## Grupas biedri:
+### Leonids Čupriņins; Antons Dubņitskis; Daniils Kunavins
