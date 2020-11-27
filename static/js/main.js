@@ -8,4 +8,16 @@ function getInfo() {
 
 };
 
+async function sendMsg(msgText, msgUser = "Admin"){
+    let data = JSON.stringify({"user":msgUser, "msg":msgText})
+
+    let response = await fetch('/sign_up',{
+        method: 'POST',
+        headers: {'Content-Type':'application/json'},
+        body: data
+    })
+
+    readChat()
+}
+
 
