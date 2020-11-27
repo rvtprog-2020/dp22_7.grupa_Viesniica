@@ -34,7 +34,7 @@
                         </li>
 
                         <li class="nav-item pr-3 pl-3">
-                            <button type="button" class="btn btn-dark" href="/">Sign Out</button>
+                            <button type="button" class="btn btn-dark" onclick="myFunctionOut()" href="/">Sign Out</button>
                         </li>
 
                     </ul>
@@ -49,7 +49,7 @@
             <h1 class="title" style="padding-top: 400px;;">Whant to see the list of hotels?</h1>
             <p class="subtitle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus expedita iure aut id modi ullam ipsam amet! Corporis iusto recusandae temporibus reiciendis deserunt officia, eveniet dolorum. Impedit doloremque voluptate minus!</p>
             <div class="text-center mt-4">
-                <button type="button" class="btn" style="width: 200px; background-color: black; color: white;" href="/catologue.html">See More</button>
+                <a href="/catologue.html"><button type="button" class="btn" style="width: 200px; background-color: black; color: white;">See More</button></a>
             </div>
 
         </div>
@@ -75,6 +75,7 @@
         </div>
 
     </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>

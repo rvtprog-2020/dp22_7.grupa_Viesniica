@@ -32,7 +32,7 @@
                 </li>
 
                 <li class="nav-item pr-3 pl-3">
-                    <button type="button" class="btn btn-dark" href="/">Sign Out</button>
+                    <a href="/"><button type="button" class="btn btn-dark">Sign Out</button></a>
                 </li>
 
             </ul>
@@ -46,25 +46,30 @@
             <h2 style="margin-bottom: 2cm">Any problems?</h2>
             <h2 style="margin-bottom: 2cm">You can leave you'r e-mail or phone number here, so we can give you more information about your problem, do not hesitate to contact us!</h2>
         </div>
-        <div class="row w-auto">
-            <div class="describe" style="text-align: center;margin: 2.2cm; margin-top: 1cm; margin-right: 1cm; padding:1cm; background-color: gray; width: 45%;">
+        <div class="row w-auto" >
+            <div class="describe" style="text-align: center;margin: 2.4cm; margin-top: 1cm; padding:1cm; background-color: gray; width: 40%;">
                 <h2>Describe your problem here:</h2>
                 <input type="text" style="width: 99%; height: 6cm;">
             </div>
-            <div style="text-align: center;margin: 2cm; margin-top: 1cm; padding:1cm; background-color: gray; width: 45%;" >
-                <div class="row">
-                    <h2>Your e-mail adress:</h2>
-                    <input class="rounded" type="text" style="margin-left: 1cm; width: 54%;">
-                </div>
-                <div style="padding-left: 3cm;">
-                    <h3 style="text-align: left;">or</h3>
-                </div>
-                <div class="row">
-                    <h2>Your phone number:</h2>
-                    <input class="rounded" type="text" style="margin-left: 15px; width: 54%;">
+            <div class="email&phone" style="background-color: gray; margin-top: 1cm; text-align: center; width: 40.9%; padding: 1cm; height: 9.2cm; margin-left: 2.4cm;">
+                <div >
+                    <div class="row">
+                        <h2>Your e-mail adress:</h2>
+                        <input class="rounded" type="text" style="margin-left: 1cm; width: 54%;">
+                    </div>
+                    <div >
+                        <h3>or</h3>
+                    </div>
+                    <div class="row">
+                        <h2>Your phone number:</h2>
+                        <input class="rounded" type="text" style="margin-left: 15px; width: 54%;">
+                        <button style="margin: 1cm; width: 90%; height: 2cm;">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 </body>
 </html>

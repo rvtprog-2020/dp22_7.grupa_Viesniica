@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template, json, jsonify
+import main
 
 app = Flask(__name__)
 
@@ -13,6 +14,10 @@ def mainpage2():
 @app.route('/sign_in.html')
 def sign_in():
     return render_template('sign_in.html')
+
+@app.route('/sign_up.html')
+def sign_up():
+    return render_template('sign_up.html')
 
 @app.route('/croom.html')
 def croom():

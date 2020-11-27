@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bekary</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <title>Bakery</title>
 </head>
 <body>
-    
+    <div class="reg-page">
+        <div class="main">
+            <h2 class="text">Sign up to Bread Bakery</h2>
+            <div class="login">
+                <input class="input-login" id="login" placeholder= "login">
+            </div>
+
+            <div class="mail">
+                <input class="input-mail" id="mail" placeholder="mail">
+            </div>
+
+            <div class="password">
+                <input class="input-password" id="password" placeholder="password">
+            </div>
+
+            <div class="sign-in">
+                <a href="/mainpage2.html"><button class="button-sign-up" onclick="getInfo();">Sign up</button></a>
+            </div>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+
 </body>
 </html>

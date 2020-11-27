@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>Bakery</title>
 </head>
-<body style="height: 2160px;">
+<body>
     <div>
         <div class="navb position-fixed w-100">   <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -19,7 +19,7 @@
                         </li>
 
                         <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link" href="/sign_in.html">Client Room</a>
+                            <a class="nav-link" href="/croom.html">Client Room</a>
                         </li>
 
                     </ul>
@@ -34,8 +34,7 @@
                         </li>
 
                         <li class="nav-item pr-3 pl-3">
-                            <a href="/sign_up.html"><button type="button" class="btn btn-dark">Sign Up</button>
-                            </a>
+                            <a href="/"><button type="button" class="btn btn-dark">Sign Out</button></a>
                         </li>
 
                     </ul>
@@ -46,16 +45,7 @@
 
         </div>
 
-        <div>
-            <div>
-                <h1 class="title" style="padding-top: 400px;">A little about us</h1>
-                <p class="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aliquid dolorum itaque voluptatem odio qui fugiat laboriosam quas atque voluptatibus, magni adipisci. Totam dolore, quod consequatur similique eum voluptate quisquam.</p>
-            </div>
-
-        </div>
-
     </div>
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
-
 </body>
 </html>

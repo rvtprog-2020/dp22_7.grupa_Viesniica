@@ -19,7 +19,7 @@
                         </li>
 
                         <li class="nav-item pr-3 pl-3">
-                            <a class="nav-link" href="/sign_up.html">Client Room</a>
+                            <a class="nav-link" href="/croom.html">Client Room</a>
                         </li>
 
                     </ul>
@@ -34,7 +34,7 @@
                         </li>
 
                         <li class="nav-item pr-3 pl-3">
-                            <button type="button" class="btn btn-dark" href="/sign_up.html">Sign Up</button>
+                            <a href="/"><button type="button" class="btn btn-dark">Sign Out</button></a>
                         </li>
 
                     </ul>
@@ -55,15 +55,56 @@
                 </div>
 
                 <div class="ayo">   <!--About your order-->
-                    <p>Hello</p>
+                    <div class="row ml-4 w-auto">
+                        <p>Reservation number:</p> 
+                        <p>00000000</p>
+                    </div>
+
+                    <div class="row pl-4">
+                        <p>Client name:</p> 
+                        <p>Jānis Bērziņš</p>
+                    </div>
+
+                    <div class="row pl-4">
+                        <p>Country:</p> 
+                        <p>Latvija (LV)</p>
+                    </div>
+
+                    <div class="row pl-4">
+                        <p>Hotel name:</p> 
+                        <p>Raddison Blu Daugava</p>
+                    </div>
+
+                    <div class="row pl-4">
+                        <p>Days of reservation:</p> 
+                        <p>21.01.2019 - 22.01.2019</p>
+                    </div>
+
+                    <div class="row pl-4">
+                        <p>Room number:</p> 
+                        <p>321</p>
+                    </div>
+
+                    <div class="row pl-4">
+                        <p>Rating:</p> 
+                        <p>*****</p>
+                    </div>
+                    
                 </div>
 
             </div>
 
         </div>
-        
+
+        <footer class="fixed-bottom">
+            <div class="foot">
+
+            </div>
+
+        </footer>
 
     </div>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
 
 </body>
 </html>
