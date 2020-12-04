@@ -3,20 +3,6 @@ import main
 
 app = Flask(__name__)
 
-CHAT_FILE = "main.txt"
-
-def write(jsonData):
-    with open(CHAT_FILE, "a", encoding="utf-8") as f:
-        f.write(json.dumps(jsonData) + '\n')
-
-def read():
-    chatLines = []
-    with open(CHAT_FILE, "r", encoding="utf-8") as f:
-        for row in f:
-            chatLines.append(json.loads(row))
-    
-    return jsonify({"chatMsg":chatLines})
-
 @app.route('/')
 def mainpage1():
     return render_template('mainpage1.html')
