@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
     <title>Bakery</title>
 </head>
-<body style="height: auto;">
-    <div class="p-0">
+<body>
+    <div class="p-0" style="height: 2240px;">
         <div class="navb position-fixed w-100">   <!--Navbar-->
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand pr-2 pl-2" href="/">BAKERY</a>              
+                <a class="navbar-brand pr-2 pl-2" href="mainpage2.html">BAKERY</a>              
                 <div class="w-100 row clearfix">
                     <ul class="navbar-nav mr-auto w-auto">
                         <li class="nav-item pr-3 pl-4">
@@ -34,7 +34,7 @@
                         </li>
 
                         <li class="nav-item pr-3 pl-3">
-                            <button type="button" class="btn btn-dark" onclick="myFunctionOut()" href="/">Sign Out</button>
+                            <button type="button" class="btn btn-dark" onclick="sign_out()">Sign Out</button>
                         </li>
 
                     </ul>
@@ -54,7 +54,7 @@
 
         </div>
 
-        <div class="w-100" style="height: 600px; padding-top: 280px;">   <!--Helping-->
+        <div class="w-100" style="height: 1200px; padding-top: 280px;">   <!--Helping-->
             <h1 class="title">If you have problems with choosing a hotel...</h1>
             <h4 class="text-center">We can offer you some of the popular ones on our website!</h4>
             <div class="row hbar">   <!--Bests hotels in your country-->
@@ -73,6 +73,48 @@
             </div>
 
         </div>
+
+        <footer class="row static-bottom w-100" style="margin-bottom: 20px; margin-top: 60px; flex: 0 0 auto;">
+            <div style="padding: 1%; padding-left: 11%;">
+                <h4>BAKERY</h4>
+                <p>© 2020 — 2020</p>
+                <p>Privacy — Terms</p>
+            </div>
+
+            <div style="padding: 1%; padding-left: 40%;"> <!--1st column-->
+                <h6>Table of content1</h6>
+                <a href="#">content1.1</a>
+                <br>
+                <a href="#">content1.2</a>
+                <br>
+                <a href="#">content1.3</a>
+                <br>
+                <a href="#">content1.4</a>
+            </div>
+
+            <div style="padding: 1%; padding-left: 3%;"> <!--2nd column-->
+                <h6>Table of content2</h6>
+                <a href="#">content2.1</a>
+                <br>
+                <a href="#">content2.2</a>
+                <br>
+                <a href="#">content2.3</a>
+                <br>
+                <a href="#">content2.4</a>
+            </div>
+
+            <div style="padding: 1%; padding-left: 3%;"> <!--3rd column-->
+                <h6>Table of content3</h6>
+                <a href="#">content3.1</a>
+                <br>
+                <a href="#">content3.2</a>
+                <br>
+                <a href="#">content3.3</a>
+                <br>
+                <a href="#">content3.4</a>
+            </div>
+
+        </footer>
 
     </div>
     <script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>

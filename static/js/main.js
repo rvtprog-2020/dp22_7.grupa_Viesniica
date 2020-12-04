@@ -6,19 +6,31 @@ function Login() {
 
     if (log == "admin") {
         if (pass == "admin") {
-            username = 'Admin';
             document.location.href = "/mainpage2.html";
+            username = 'Admin';
         }
     }
-    if (log == "client") {
+    else if (log == "client") {
         if (pass == "client") {
-            username = 'Client';
             document.location.href = "/mainpage2.html";
+            username = 'Client';
         }
-
     }
     else {
         document.location.href = "/sign_in.html";
     }
 }
 
+function sign_out() {
+    document.location.href = "/"
+    username = "Guest"
+}
+
+function Chose() {
+    if (username == "Client" || useername == "Admin") {
+        document.location.href = "/mainpage2.html"
+    }
+    else {
+        document.location.href = "/catologue.html"
+    }
+}
