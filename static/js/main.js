@@ -26,7 +26,7 @@ function sign_out() {
     username = "Guest"
 }
 
-function Chose() {
+function Chose1() {
     if (username == "Client" || useername == "Admin") {
         document.location.href = "/mainpage2.html"
     }

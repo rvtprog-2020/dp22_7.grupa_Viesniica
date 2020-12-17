@@ -1,5 +1,21 @@
-from flask import Flask, request, render_template, json, jsonify
+from flask import Flask, render_template, request
+from pymongo import MongoClient
+from bson.json_util import dumps
+from bson.objectid import ObjectId
 import main
+
+#lg - Ckaai
+#pw - eGcibzB1uJf9vcZn
+
+
+client = MongoClient("mongodb+srv://Ckaai:eGcibzB1uJf9vcZn@myproject.bdsbv.mongodb.net/myProject?retryWrites=true&w=majority")
+db = client.myProject
+
+users_db = db.users
+
+#user1 = {"name":"Leo", "surname":"Chu", "status":"admin"}
+#users_db.insert_one(user1)
+#exit()
 
 app = Flask(__name__)
 
@@ -30,5 +46,30 @@ def help():
 @app.route('/catologue.html')
 def catologue():
     return render_template('catologue.html')
+
+@app.route("/users")
+def users():
+    users_data = users_db.find()
+    if users_data:
+        return dumps(users_data)
+    else:
+        return {"error":"No users in DB"}
+
+@app.route("/user/<id>")
+def user(id):
+    user = users_db.find_one({"_id":ObjectId(id)})
+    if user:
+        return dumps(user)
+
+
+
+@app.route("/user/create", methods = ["POST"])
+def createUser():
+    if request.method == "POST" and request.content_type == "application/json":
+        dati = request.json
+        users_db.insert_one({"vards":dati["vards"], "uzvards":dati["uzvards"], "status":dati["status"]})
+        return {"message":"User crated!"}
+    else:
+        return {"error":"Method or content type not supprted!"}
 
 app.run(host='0.0.0.0', port=80, debug=True)
