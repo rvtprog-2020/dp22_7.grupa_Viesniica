@@ -21,29 +21,25 @@ app = Flask(__name__)
 
 @app.route('/')
 def mainpage1():
-    return render_template('mainpage1.html')
+    return render_template('mainpage.html')
 
-@app.route('/mainpage2.html')
-def mainpage2():
-    return render_template('mainpage2.html')
-
-@app.route('/sign_in.html')
+@app.route('/sign_in')
 def sign_in():
     return render_template('sign_in.html')
 
-@app.route('/sign_up.html')
+@app.route('/sign_up')
 def sign_up():
     return render_template('sign_up.html')
 
-@app.route('/croom.html')
+@app.route('/croom')
 def croom():
     return render_template('croom.html')
 
-@app.route('/help.html')
+@app.route('/help')
 def help():
     return render_template('help.html')
 
-@app.route('/catologue.html')
+@app.route('/catologue')
 def catologue():
     return render_template('catologue.html')
 
@@ -61,7 +57,9 @@ def user(id):
     if user:
         return dumps(user)
 
-
+@app.route('/admin_room')
+def admin_room():
+    return render_template('admin_room.html')
 
 @app.route("/user/create", methods = ["POST"])
 def createUser():

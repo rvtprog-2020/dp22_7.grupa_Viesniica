@@ -6,18 +6,18 @@ function Login() {
 
     if (log == "admin") {
         if (pass == "admin") {
-            document.location.href = "/mainpage2.html";
+            document.location.href = "/";
             username = 'Admin';
         }
     }
     else if (log == "client") {
         if (pass == "client") {
-            document.location.href = "/mainpage2.html";
+            document.location.href = "/";
             username = 'Client';
         }
     }
     else {
-        document.location.href = "/sign_in.html";
+        document.location.href = "/sign_in";
     }
 }
 
@@ -28,9 +28,9 @@ function sign_out() {
 
 function Chose1() {
     if (username == "Client" || useername == "Admin") {
-        document.location.href = "/mainpage2.html"
+        document.location.href = "/"
     }
     else {
-        document.location.href = "/catologue.html"
+        document.location.href = "/"
     }
 }
