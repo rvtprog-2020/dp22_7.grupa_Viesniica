@@ -28,14 +28,6 @@ function Login() {
     }
 }
 
-function sign_out() {
-    if (username) {
-        document.location.href = "/"
-        username = "Guest"
-    }
-    
-}
-
 function Chose1() {
     if (username == "Client" || useername == "Admin") {
         document.location.href = "/"
@@ -44,5 +36,14 @@ function Chose1() {
     else {
         document.location.href = "/"
         document.inouts.innerHTML = "Sign In"
+    }
+}
+
+function admin() {
+    if (username == 'Admin') {
+        document.location.href = "/admin_room"
+    }
+    else {
+        document.location.href = "/"
     }
 }
