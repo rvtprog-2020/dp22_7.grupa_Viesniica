@@ -43,6 +43,10 @@ def help():
 def catologue():
     return render_template('catologue.html')
 
+@app.route('/order')
+def order():
+    return render_template('order.html')
+
 @app.route("/users")
 def users():
     users_data = users_db.find()
