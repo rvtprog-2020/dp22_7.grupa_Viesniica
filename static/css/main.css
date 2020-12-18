@@ -136,3 +136,15 @@
     background-color: gainsboro;
 
 }
+
+/* Order */
+
+.or {
+    position: absolute;
+    width: 100%;
+    height: 75%;  
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
